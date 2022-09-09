@@ -865,7 +865,7 @@ background-color: rgba(0,0,0,0.5);
       max-width: 100%;
     }
     .work-section .work-item,
-    .service-section .service-item{
+    .service-section .artist-section .artist-item .service-item{
     	flex: 0 0 50%;
     max-width: 50%;
     }
@@ -883,7 +883,7 @@ background-color: rgba(0,0,0,0.5);
    .contact-section .contact-info .info-item,
    .contact-section .contact-form .form .input-group.left, 
    .contact-section .contact-form .form .input-group.right,
-   .work-section .work-item,
+   .work-section .artist-section .work-item,
    .service-section .service-item{
     	flex: 0 0 100%;
         max-width: 100%;
