@@ -11,7 +11,7 @@ ul {
     list-style: none;
 }
 .faq {
-    padding: 12px 0 9px;
+    padding: 120px 0 90px;
     background: #000;
     min-height: 100vh;
 }
@@ -33,7 +33,7 @@ ul {
     border: none;
     border-radius: 1px;
     padding: 0;
-    background-color: rgba(240, 100, 100, 0);
+    background-color: #000;
 }
 
 .faq .accordion .card .card-header h5 {
@@ -51,6 +51,10 @@ ul {
     color: #555555;
     text-align: left;
     background: #000;
+    /* -webkit-box-shadow: 0px -5px 10px 0px #555555;
+    box-shadow: 0px -5px 10px 0px #555555; */
+    /* border-radius: 10px 10px 0 0; */
+    position: relative;
 }
 
 .faq .accordion .card .card-header h5 button:after {
@@ -63,6 +67,7 @@ ul {
     background-color: transparent;
     color: #555555;
     text-align: center;
+    border: 1px solid #555555;
     border-radius: 50%;
     line-height: 100%;
     content: '\f067';
@@ -77,6 +82,7 @@ ul {
     border-radius: 10px;
     -webkit-box-shadow: none;
     box-shadow: none;
+    border: 1px solid #555555;
 }
 
 .faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
@@ -85,6 +91,9 @@ ul {
 }
 
 .faq .accordion .card .card-body {
+    /* -webkit-box-shadow: 0px 5px 10px 0px rgba(69, 81, 100, 0.1);
+    box-shadow: 0px 5px 10px 0px #555555; */
+    /* border-radius: 0 0 10px 10px; */
     padding-top: 0;
     background-color: #000;
     margin-top: -6px;
@@ -93,17 +102,4 @@ ul {
     padding-bottom: 23px;
     color: #555555;
     line-height: 30px;
-}
-
-@media screen and (max-width: 600px) {
-    body{
-  overflow-x: hidden !important;
-    }
-    .faq {
-        padding: 60px 0 45px;
-    }
-    .faq .accordion .card .card-header h5 button {
-        font-size: 13px;
-        padding: 0 15px 0 60px;
-    }
 }
