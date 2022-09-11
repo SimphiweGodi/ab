@@ -11,7 +11,7 @@ ul {
     list-style: none;
 }
 .faq {
-    padding: 120px 0 90px;
+    padding: 12px 0 9px;
     background: #000;
     min-height: 100vh;
 }
@@ -33,7 +33,7 @@ ul {
     border: none;
     border-radius: 1px;
     padding: 0;
-    background-color: #000;
+    background-color: rgba(240, 100, 100, 0);
 }
 
 .faq .accordion .card .card-header h5 {
@@ -51,7 +51,6 @@ ul {
     color: #555555;
     text-align: left;
     background: #000;
-    position: relative;
 }
 
 .faq .accordion .card .card-header h5 button:after {
@@ -64,7 +63,6 @@ ul {
     background-color: transparent;
     color: #555555;
     text-align: center;
-    border: 1px solid #555555;
     border-radius: 50%;
     line-height: 100%;
     content: '\f067';
@@ -79,7 +77,6 @@ ul {
     border-radius: 10px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border: 1px solid #555555;
 }
 
 .faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
