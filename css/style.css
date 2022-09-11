@@ -5,8 +5,7 @@
     --black: #191b17;
     --transition: all 0.5s ease-in-out;
 }
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
 body{
   margin:0;
   line-height: 1.5;
@@ -16,7 +15,7 @@ body{
  input,
  textarea,
  button{
-	font-family:'Courier New', Courier, monospace !important;
+ 	font-family: 'Raleway', sans-serif;
  	font-weight: 400;
  }
 
