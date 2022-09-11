@@ -3,6 +3,7 @@
 body{
   margin:0;
   line-height: 1.5;
+  overflow-x: hidden !important;
   background-color: #000 !important;
  }
  body,
@@ -376,15 +377,6 @@ width: 320px;
 }
 .about-section .about-img .img-box{
 	position: relative;
-}
-.about-section .about-img .img-box .shape-02{
-   position: absolute;
-   height: 30px;
-   width: 30px;
-   border:2px solid #FF9800;
-   left:30px;
-   top:30px;
-   animation:ani01 5s linear infinite;
 }
 .about-section .about-img .img-box img{
 	width: 100%;
@@ -864,6 +856,10 @@ background-color: rgba(0,0,0,0.5);
       flex: 0 0 100%;
       max-width: 100%;
     }
+	video{
+		width: 360px;
+		height: 366px;
+	}
     .work-section .work-item,
 	.artist-section .artist-item,
     .service-section .service-item{
