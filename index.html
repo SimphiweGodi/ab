@@ -5,12 +5,20 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<body>
+<body onload="unFold();">
 	<!-- Preloader Start  -->
-	<div class="preloader">
-		<div class="loader">
-		</div>
+	<div id="preloader" class="preloader">
+		<img src="./img/icons/bc.png" id="flash1" class="flash" alt="bc logo">
+		<script>
+			var flash = document.getElementById("flash1");
+			function animate() {
+				flash.style.opacity = Math.random();
+				window.requestAnimationFrame(animate);
+			}
+			animate();
+		</script>
 	</div>
 	<!-- Preloader End  -->
 
@@ -243,6 +251,166 @@
 		</div>
 	</section>
 	<!-- Work Section End -->
+
+	<section class="faq" id="faq">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-8 col-lg-8 text-center">
+					<div class="section-title">
+						<h1>FAQ's</h1>
+						<h2>Frequently Asked <span>Question’s</span></h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xl-12 col-lg-12">
+					<div class="accordion" id="accordionExample">
+						<div class="row">
+							<div class="col-xl-6 col-lg-6">
+								<div class="card">
+									<div class="card-header">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#collapseOne" aria-expanded="false"
+												aria-controls="collapseOne">
+												How long does it take for a piercing to heal?
+											</button>
+										</h5>
+									</div>
+
+									<div id="collapseOne" class="collapse" data-parent="#accordionExample">
+										<div class="card-body">
+											Approximatly 2 - 3 months depending on the type of piercing.
+										</div>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#collapseTwo" aria-expanded="false"
+												aria-controls="collapseTwo">
+												How long does it take for a tattoo to heal?
+											</button>
+										</h5>
+									</div>
+									<div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+										<div class="card-body">
+											Approximatly a month depending on the type of tattoo.
+										</div>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#collapseThree" aria-expanded="false"
+												aria-controls="collapseThree">
+												How do I take care of the tattoo? 
+											</button>
+										</h5>
+									</div>
+									<div id="collapseThree" class="collapse" data-parent="#accordionExample">
+										<div class="card-body">
+											Gently wash the tattoo with luke warm water & fragrance-free soap then apply Bepenthen 
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#collapse4" aria-expanded="false"
+												aria-controls="collapseThree">
+												How do I take care of a piercing?
+											</button>
+										</h5>
+									</div>
+									<div id="collapse4" class="collapse" data-parent="#accordionExample">
+										<div class="card-body">
+											Mix salt with luke warm water and wipe the area with tissue or paper towel. NB <strong>DO NOT USE COTTON!</strong> <br>
+											If the piercing is on/in you mouth <strong>DO NOT DRINK ALOCOHOL</strong> for a week/ 7 days.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6">
+								<div class="card">
+									<div class="card-header">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#collapse5" aria-expanded="false"
+												aria-controls="collapseOne">
+												How long is a tattoo session?
+											</button>
+										</h5>
+									</div>
+									<div id="collapse5" class="collapse" data-parent="#accordionExample">
+										<div class="card-body">
+											Depending on the detail, size & placement of the tattoo it may take up to 8 hours with breaks in between.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#collapse6" aria-expanded="false"
+												aria-controls="collapseTwo">
+												Is getting a tattoo painful?
+											</button>
+										</h5>
+									</div>
+									<div id="collapse6" class="collapse" data-parent="#accordionExample">
+										<div class="card-body">
+											Depends on detail, size & placement of the tattoo. Usually it hurts more where there is less tissue and more bone.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#collapse7" aria-expanded="false"
+												aria-controls="collapseThree">
+												When is the best time to get a tattoo?
+											</button>
+										</h5>
+									</div>
+									<div id="collapse7" class="collapse" data-parent="#accordionExample">
+										<div class="card-body">
+											Winter. We advice that you get your tattoo on the winter season because the other seasons are harsh on your body which is bad for your new tattoo.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+												data-target="#collapse8" aria-expanded="false"
+												aria-controls="collapseThree">
+												What should I know before getting a tattoo?
+											</button>
+										</h5>
+									</div>
+									<div id="collapse8" class="collapse" data-parent="#accordionExample">
+										<div class="card-body">
+											Drinks lots of water & avoid alcohol. <br>
+											Eat solid foods on the day of the tattoo.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 
 	<!-- Contact Section Start -->
