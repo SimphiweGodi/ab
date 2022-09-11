@@ -99,10 +99,11 @@ ul {
 }
 
 @media screen and (max-width: 600px) {
+    body{
+  overflow-x: hidden !important;
+    }
     .faq {
         padding: 60px 0 45px;
-        background: red;
-        /* min-height: 100vh; */
     }
     .faq .accordion .card .card-header h5 button {
         font-size: 13px;
