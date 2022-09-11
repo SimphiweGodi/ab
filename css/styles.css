@@ -65,9 +65,9 @@ ul {
     width: 20px;
     height: 20px;
     background-color: transparent;
-    color: #555555;
+    color: transparent;
     text-align: center;
-    border: 1px solid #555555;
+    border: 3px dotted #555555;
     border-radius: 50%;
     line-height: 100%;
     content: '\f067';
@@ -82,7 +82,7 @@ ul {
     border-radius: 10px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border: 1px solid #555555;
+    border: 1px solid transparent;
 }
 
 .faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
