@@ -96,6 +96,7 @@ body{
  
 .preloader {
     position: fixed;
+    z-index: 10000;
     top: 0;
     left: 0;
     right: 0;
@@ -117,69 +118,6 @@ body{
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
-
-.preload {
-    border: 1px ridge white;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-animation: 2s spin linear infinite;
-    animation: 2s spin linear infinite;
-
-
-}
-
-
-.preloader1 {
-    width: 410px;
-    height: 410px;
-    border-top-color: black;
-
-
-}
-.preloader2 {
-    width: 150px;
-    height: 150px;
-    border-bottom-color: black;
-
-}
-
-@-webkit-keyframes spin {
-
-    from {
-        -webkit-transform: translate(-50%, -50%) rotate(0deg);
-        -moz-transform: translate(-50%, -50%) rotate(0deg);
-        transform: translate(-50%, -50%) rotate(0deg);
-
-    }
-
-    to {
-        -webkit-transform: translate(-50%, -50%) rotate(360deg);
-        -moz-transform: translate(-50%, -50%) rotate(360deg);
-        transform: translate(-50%, -50%) rotate(360deg);
-
-    }
-}
-@keyframes spin {
-
-    from {
-        -webkit-transform: translate(-50%, -50%) rotate(0deg);
-        -moz-transform: translate(-50%, -50%) rotate(0deg);
-        transform: translate(-50%, -50%) rotate(0deg);
-
-    }
-
-    to {
-        -webkit-transform: translate(-50%, -50%) rotate(360deg);
-        -moz-transform: translate(-50%, -50%) rotate(360deg);
-        transform: translate(-50%, -50%) rotate(360deg);
-
-    }
-}
-
 .loaded {
         opacity: 0;
         visibility: hidden;
@@ -283,7 +221,7 @@ body{
 /* home section */
  .home-section{
  	min-height: 100vh;
- 	background-image: url('../img/hero.gif');
+ 	/* background-image: url('../img/hero.gif'); */
  	background-size: cover;
  	background-position: center;
  	position: relative;
@@ -375,15 +313,6 @@ width: 320px;
 }
 .about-section .about-img .img-box{
 	position: relative;
-}
-.about-section .about-img .img-box .shape-02{
-   position: absolute;
-   height: 30px;
-   width: 30px;
-   border:2px solid #FF9800;
-   left:30px;
-   top:30px;
-   animation:ani01 5s linear infinite;
 }
 .about-section .about-img .img-box img{
 	width: 100%;
@@ -815,8 +744,6 @@ background-color: rgba(0,0,0,0.5);
 	font-size: 16px;
 }
 
-
-
 /*responsive*/
 
 @media(min-width: 768px){
@@ -863,7 +790,12 @@ background-color: rgba(0,0,0,0.5);
       flex: 0 0 100%;
       max-width: 100%;
     }
+	video{
+		width: 360px;
+		height: 366px;
+	}
     .work-section .work-item,
+	.artist-section .artist-item,
     .service-section .service-item{
     	flex: 0 0 50%;
     max-width: 50%;
@@ -883,6 +815,7 @@ background-color: rgba(0,0,0,0.5);
    .contact-section .contact-form .form .input-group.left, 
    .contact-section .contact-form .form .input-group.right,
    .work-section .work-item,
+   .artist-section .artist-item,
    .service-section .service-item{
     	flex: 0 0 100%;
         max-width: 100%;
